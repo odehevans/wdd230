@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Berkshire Swash", "Brush Script MT", serif;
+}
+
+main, header, nav, footer {
+  max-width: 760px;
+  margin: 1rem auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #174E70;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header img {
+  width: 100px;
+  margin-right: 3rem;
+}
+
+main h2, main h3 {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+hr {
+  max-width: 500px;
+}
+
+section.card {
+  max-width: 500px;
+  margin: 1rem auto;
+  padding-bottom: 10px;
+  box-shadow: 5px 5px 10px 5px grey;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow-x: hidden;
+}
+
+section.card h3 {
+  background-color: #174E70;
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+}
+
+section.card ul {
+  list-style-type: none;
+}
+
+section.card p{
+  padding-left: 15px;
+}
+
+footer {
+  text-align: center;
+  background-color: #174E70;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
