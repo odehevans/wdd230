@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
