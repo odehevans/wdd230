@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body.dark {
+  background-color: #777;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Berkshire Swash", "Brush Script MT", serif;
 }
@@ -28,9 +32,23 @@ nav {
   margin-bottom: 0;
 }
 
-nav a {
+#menuIcon {
+  cursor: pointer;
+}
+
+nav a.menuItem {
+  display: none;
   color: #ffffff;
   text-decoration: none;
+  padding: 1rem;
+}
+
+nav a.menuItem:hover {
+  color: yellow;
+}
+
+nav a.menuItem.open {
+  display: inline-block;
 }
 
 header {
@@ -50,6 +68,15 @@ header img {
 
 main {
   margin-bottom: 40px;
+}
+
+main.dark {
+  background-color: #333;
+  color:#FFF;
+}
+
+main.dark a {
+  color:yellow;
 }
 
 main h2, main h3 {
@@ -96,6 +123,6 @@ footer {
 }
 
 footer p a {
-  color: white;
+  color: yellow;
   
 }
