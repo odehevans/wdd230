@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Berkshire Swash", "Brush Script MT", serif;
+}
+
+main, header, nav, footer {
+  max-width: 760px;
+  margin: 1rem auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #145A8C;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+header h1 {
+  display: none;
+}
+
+#logo {
+  width: 50%;
+  margin-left: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin: 1rem;
+}
+
+#menu-icon {
+  cursor: pointer;
+}
+
+nav a.menu-item {
+  display: none;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a.menu-item:hover {
+  color: yellow;
+}
+
+nav a.menu-item.open {
+  display: inline-block;
+}
+
+main {
+
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px; 
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+  text-align: center;
+  color: #F1FAEE;
+}
+
+.button-box {
+  text-align: center;
+}
+
+.join {
+  background-color: #457B9D; 
+  color: #F1FAEE;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.join:hover {
+  background-color: #E63946; 
+  color: #F1FAEE;
+}
+
+#mission {
+  margin-bottom: 2rem;
+}
+
+section.feature {
+  text-align: left;
+  background-color: #F1FAEE;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+section.feature h3 {
+  color: #E63946;
+  text-align: right;
+  margin-bottom: 3px;
+}
+
+section.card {
+  max-width: 300px;
+  padding: 1rem;
+  background-color: #dfeef9;
+  margin: 1rem auto;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #286896;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+footer hr {
+  width: 100%;
+}
+
+p em {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.active, .highlight {
+  color: yellow !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.color-red {
+  color: #E63946;
+}
+
+.color-blue {
+  color: #286896;
+}
+
+h2 {
+  border-bottom: 1px solid #444;
+  width: 200px;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 5px 10px;
+}
+
