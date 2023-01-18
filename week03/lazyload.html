@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="styles/lazyload.css" />
+  <title>Lazy loading images</title>
+</head>
+<body>
+  <header>
+    <h1>Native Lazy Loading of Images</h1>
+  </header>
+  <main>
+    <picture><img src="//placeimg.com/400/600/animals" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+    <picture><img src="//placeimg.com/400/600/arch" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+    <picture><img src="//placeimg.com/400/600/people" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+    <picture><img src="//placeimg.com/400/600/tech" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+    <picture><img src="//placeimg.com/400/600/nature" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+    <picture><img src="//placeimg.com/400/600/any" alt="An external placeholder image" loading="lazy" width="400" height="600"></picture>
+  </main>
+  <footer>
+    <hr>
+    <p>&copy; <span id="currentYear">2023</span></p>
+    <p id="lastModified">Last Modification: </p>
+   </footer>
+   <script src="scripts/getDates.js"></script>
+</body>
+</html>
