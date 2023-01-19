@@ -18,16 +18,15 @@
     <meta charset="utf-8">
     <meta property="og:title" content="Benin City Chamber of Commerce">
     <meta property="og:type" content="non_profit">
-    <meta property="og:image" content="images/benin-city-area-view.png">
+    <meta property="og:image" content="https://odehevans.github.io/wdd230/images/benin-city-view.png">
     <meta property="og:url" content="https://odehevans.github.io/wdd230">
 		
 </head>
 <body>
   <nav>
-    <img id="menuIcon" src="images/menu-icon.svg" alt="menu icon" />
+    <img id="menuIcon" src="images/menu-icon.svg" alt="menu icon" loading="lazy"/>
     
     <a class="menuItem" href="https://www.linkedin.com/in/evans-odeh" target="_blank">
-      <!-- <img src="images/icons8-linkedin-64.png" alt="linkedin icon" /> -->
       Linkedin
     </a>
 
@@ -38,10 +37,19 @@
     <button id="darkMode">Dark Mode</button>
   </nav>
   <header>
-    <img src="images/profile-image.jpg" alt="profile image" />
+    <img src="images/profile-image-300.webp" alt="profile image" loading="lazy"/>
     <h1>Evans Odeh</h1>
   </header>
   <main>
+    <div id="hero">
+      <div id="heroOverlay">
+        <h3>Aba Nigeria Temple</h3>
+      </div>
+      <picture>
+        <source media="(max-width: 400px)" srcset="images/aba_nigeria_temple_lds_cropped_400.webp">
+        <img id="heroImg" src="images/aba_nigeria_temple_lds_960.webp" alt="Aba Nigeria Temple" loading="lazy"/>
+      </picture>
+    </div>
     <h2>WDD 230: Course Activity Portal</h2>
     <hr />
     <section id="learningActivities" class="card">
@@ -55,20 +63,21 @@
         <li>Week 06: </li>
       </ul>
     </section>
-    <section class="card">
+    <section id="project" class="card">
       <h3>Project</h3>
       <ul>
         <li><a href="chamber/index.html" target="_blank">Benin City Chamber of Commerce</a></li>
       </ul>
     </section>
-    <section class="card">
+    <section id="information" class="card">
       <h3>Information</h3>
       <ul>
         <li>Weather: 74<sup>o</sup>F - Sunshine</li>
-        <li>Visit Count: 27</li>
+        <li>Visit Count: <span id="visits"></span></li>
       </ul>
     </section>
   </main>
+  <div id="googleMap"><div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="450" loading="lazy" id="gmap_canvas" src="https://maps.google.com/maps?q=Benin%20City&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:450px;width:600px;}</style><a href="https://www.embedgooglemap.net">inserting google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:600px;}</style></div></div></div>
   <footer>
    <p>&copy; <span id="currentYear">2022</span> - Evans Odeh, Nigeria</p>
    <p id="lastModified" class="highlight">Last Modified: </p>
@@ -77,5 +86,6 @@
   <script src="scripts/getDates.js"></script>
   <script src="scripts/toggleMenu.js"></script>
   <script src="scripts/darkMode.js"></script>
+  <script src="scripts/visitsCount.js"></script>
 </body>
 </html>
