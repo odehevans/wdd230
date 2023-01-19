@@ -60,10 +60,6 @@ nav a.menu-item.open {
   display: inline-block;
 }
 
-main {
-
-}
-
 #hero {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -175,4 +171,75 @@ h2 {
   margin: 1rem auto;
   padding: 5px 10px;
 }
+
+#discover #sidebar {
+  width: 100%;
+  color: #F1FAEE;
+  background-color: #145A8C;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+#discover #sidebar h2 {
+  border-bottom: 2px solid #ffffff;
+}
+
+#discover #sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stat-item {
+  display: grid;
+  grid-template-columns: 26px auto 48px;
+  padding: 1rem;
+  font-size: 14px;
+  align-items: center;
+}
+
+.stat-item img {
+  width: 18px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-family: "Berkshire Swash", "Brush Script MT", serif;
+}
+
+#featured-images {
+  width: 100%;
+}
+
+.image-card {
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px #BBB;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.image-card:last-child {
+  margin-bottom: 1rem;
+}
+
+.image-card img {
+  width: 100%;
+  transition: transform .5s;
+}
+
+.image-card img:hover {
+  opacity: .8;
+  transform: scale(1.1);
+}
+
+.image-card p {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+
 
