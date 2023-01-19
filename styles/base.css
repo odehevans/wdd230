@@ -88,13 +88,14 @@ main h2, main h3 {
 
 #heroOverlay {
   position: absolute;
-	bottom: 30px;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  background-color: #000;
-	padding: 1.5rem;
-	opacity: 0.6;
+	top: 50px;
+  right: 0px;
+  color: #000;
+  background: radial-gradient(#fff, #000);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+  opacity: 0.5;
 }
 
 #heroOverlay h3 {
