@@ -232,11 +232,6 @@ h2 {
   transition: transform .5s;
 }
 
-.image-card img:hover {
-  opacity: .8;
-  transform: scale(1.1);
-}
-
 .image-card p {
   color: #333;
   text-align: center;
