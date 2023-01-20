@@ -84,7 +84,7 @@ nav a.menu-item.open {
 
 #hero-msg h1, #hero-msg h4 {
   text-align: center;
-  color: #F1FAEE;
+  color: #FFFFFF;
 }
 
 .button-box {
@@ -92,8 +92,8 @@ nav a.menu-item.open {
 }
 
 .join {
-  background-color: #457B9D; 
-  color: #F1FAEE;
+  background-color: #145A8C; 
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 18px;
   padding: 15px 30px;
@@ -118,7 +118,7 @@ section.feature {
 }
 
 section.feature h3 {
-  color: #E63946;
+  color: #333;
   text-align: right;
   margin-bottom: 3px;
 }
@@ -133,7 +133,7 @@ section.card {
 
 footer {
   text-align: center;
-  background-color: #286896;
+  background-color: #145A8C;
   color: white;
   padding: 10px;
   margin-top: 30px;
@@ -148,8 +148,8 @@ p em {
   font-weight: 800;
 }
 
-.active, .highlight {
-  color: yellow !important;
+.active {
+  border: 1px solid white;
 }
 
 .text-center {
@@ -157,11 +157,15 @@ p em {
 }
 
 .color-red {
-  color: #E63946;
+  color: red;
+}
+
+.color-black {
+  color: #333;
 }
 
 .color-blue {
-  color: #286896;
+  color: #025590;
 }
 
 h2 {
