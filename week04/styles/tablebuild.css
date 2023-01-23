@@ -1,0 +1,45 @@
+table {
+	margin: 10px auto;
+	border: thin solid #aaaaaa;
+	box-shadow: 0 0 7px #333333;
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: #333333;
+	font-size: .85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid #aaaaaa;
+}
+
+thead th{
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1.5rem;
+  border: none;
+}
+
+
+thead th[scope="col"] {
+  background-color: #444444;
+}
+
+
+
+th {
+	font-size: larger;
+  font-weight: 800;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #cccccc;
+}
