@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
 
+:root {
+  --primary-color: #174E70;
+  --form-max-width: 20rem;
+  --header-font: "Berkshire Swash", "Brush Script MT", serif;
+}
+
 body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
@@ -10,10 +16,10 @@ body.dark {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Berkshire Swash", "Brush Script MT", serif;
+  font-family: var(--header-font)
 }
 
-main, header, nav, footer, #googleMap  {
+main, header, nav, footer, #googleMap, #contactForm  {
   max-width: 760px;
   margin: 1rem auto;
 }
@@ -50,7 +56,7 @@ nav a.menuItem.open {
 header {
   display: flex;
   align-items: center;
-  background-color: #174E70;
+  background-color: var(--primary-color);
   color: white;
   margin-bottom: 0;
   margin-top: 0;
@@ -124,7 +130,7 @@ section.card {
 }
 
 section.card h3 {
-  background-color: #174E70;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px;
   margin-top: 0;
@@ -144,9 +150,101 @@ section.card p{
   overflow: auto;
 }
 
+#contactForm h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: .75rem;
+}
+
+form {
+  max-width: var(--form-max-width);
+  margin: .75rem auto;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: .8rem;
+}
+
+form label.top input {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: var(--form-max-width);
+  background-color: rgba(0,0,0,0.1);
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: .75rem 0 2rem 2%;
+  width: 96%;
+  max-width: var(--form-max-width);
+}
+
+form label.top input:required:invalid {
+  border-left: solid 6px red;
+}
+
+form label.top input:required:valid {
+  border-left: solid 6px green;
+}
+
+table {
+  display: none;
+  width: 100%;
+  max-width: var(--form-max-width);
+	margin: 10px auto;
+	border: thin solid #aaaaaa;
+	box-shadow: 0 0 7px #333333;
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	color: #333333;
+	font-size: .85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid #aaaaaa;
+  border-right: none;
+  border-left: none;
+}
+
+thead th{
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1.5rem;
+  border: none;
+}
+
+thead tr:first-child th{
+  color: #000;
+  background-color: inherit;
+  font-size: 2rem;
+}
+
+tbody th {
+  background-color: #333;
+  color: white;
+  text-align: right;
+}
+
 footer {
   text-align: center;
-  background-color: #174E70;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px;
   margin-top: 30px;
@@ -154,5 +252,4 @@ footer {
 
 footer p a {
   color: yellow;
-  
 }
