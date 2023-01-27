@@ -156,6 +156,11 @@ section.card p{
   margin-bottom: .75rem;
 }
 
+#errorMessage {
+  color: red;
+  text-align: center;
+}
+
 form {
   max-width: var(--form-max-width);
   margin: .75rem auto;
@@ -221,7 +226,10 @@ th, td {
 	border: 1px solid #aaaaaa;
   border-right: none;
   border-left: none;
-  width: 50%;
+}
+
+tr {
+  width: 100%;
 }
 
 thead th{
@@ -237,6 +245,11 @@ thead tr:first-child th{
   font-size: 2rem;
 }
 
+
+
+thead tr:last-child th{
+  width: 50%;
+}
 
 tbody th {
   background-color: #333;

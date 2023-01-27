@@ -4,8 +4,9 @@ const rating = document.querySelector("#rating");
 const ratingInput = document.querySelector("#ratingInput");
 const username1 = document.querySelector("#username1");
 const username2 = document.querySelector("#username2");
-const message = document.querySelector("#errorMessage");
+const message = document.querySelector("#errorMessage em");
 const submitBtn = document.querySelector(".submitBtn");
+const form = document.querySelector("#contactForm form");
 const table = document.querySelector("#inputTable");
 const tName = document.querySelector("td.name");
 const tEmail = document.querySelector("td.email");
@@ -15,7 +16,7 @@ const tUsername = document.querySelector("td.username");
 ratingInput.addEventListener('change', displayRatingValue);
 ratingInput.addEventListener('input', displayRatingValue);
 username2.addEventListener("focusout", validateUsername);
-submitBtn.addEventListener("click", submitForm);
+form.addEventListener("submit", submitForm)
 
 function displayRatingValue() {
   rating.innerHTML = ratingInput.value;
@@ -26,22 +27,20 @@ function validateUsername() {
 		message.textContent = "Username DO NOT MATCH!";
 		username2.value = "";
 		username1.focus();
-    return;
-	} else {
-    message.textContent = "";
+    return false;
 	}
+
+  message.textContent = "";
+  return true;
 }
 
 // console.log('table', table)
 
 function submitForm(e) {
-  console.log('something shasssss')
+  // console.log('something shasssss')
   
   e.preventDefault();
-  if (username1.value !== username2.value || !fullname.value || !email.value || rating.value) {
-    console.log('Na wah ooooo')
-    return message.textContent = "Please fill all required fields";
-  }
+  if (!validateUsername()) return;
   message.textContent = "";
   table.style.display = "block";
   tName.textContent = fullname.value;
@@ -49,6 +48,8 @@ function submitForm(e) {
   tRating.textContent = ratingInput.value;
   tUsername.textContent = username1.value;
 }
+
+
 
 displayRatingValue();
 
