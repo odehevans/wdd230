@@ -245,12 +245,11 @@ h2 {
 form label.top, form div {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: #333;
   font-size: .8rem;
 }
 
 form label.top input, form label.top textarea {
-  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: solid 1px #999;

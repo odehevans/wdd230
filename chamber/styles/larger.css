@@ -36,6 +36,7 @@
   
   section.card {
     margin: 0;
+    margin-bottom: 1rem;
   }
 
   footer #upper {
@@ -71,6 +72,25 @@
   .image-card img:hover {
     opacity: .8;
     transform: scale(1.1);
+  }
+
+  form label.sbs {
+    padding: .4rem 0;
+  }
+
+  main#join {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .membership-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .membership-benefits h2 {
+    margin-bottom: 2rem;
   }
  
 }

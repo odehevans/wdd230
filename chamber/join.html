@@ -30,7 +30,8 @@
       </nav>
       <img id="logo" src="images/benin-city-chamber.webp" width="400" height="135" alt="logo" loading="lazy" />
     </header>
-    <main>
+    <main id="join">
+      <div>
       <section>
         <h2>Join Us</h2>
         <form method="get" action="thankyou.html">
@@ -42,10 +43,10 @@
           <label class="top">Business Name/Title* <input id="business" type="text" name="business" required ></label>
           
           <div>Membership Level</div>
-          <label class="sbs"><input type="radio" name="audience" value="np" > NP Membership</label>
-          <label class="sbs"><input type="radio" name="audience" value="bronze" > Bronze Membership</label>
-          <label class="sbs"><input type="radio" name="audience" value="silver" > Silver Membership</label>
-          <label class="sbs"><input type="radio" name="audience" value="gold" > Gold Membership</label>
+          <label class="sbs"><input type="radio" name="membership" value="np" > NP Membership</label>
+          <label class="sbs"><input type="radio" name="membership" value="bronze" > Bronze Membership</label>
+          <label class="sbs"><input type="radio" name="membership" value="silver" > Silver Membership</label>
+          <label class="sbs"><input type="radio" name="membership" value="gold" > Gold Membership</label>
 
           <label class="top">Business Description* <textarea id="description" type="text" name="description"></textarea></label>
           <input id="current-date" type="hidden" name="current-date" value="">
@@ -53,6 +54,41 @@
           <input class="submit-btn" type="submit" value="Join" >
         </form>
       </section>
+      </div>
+      <div class="membership-benefits">
+        <h2>Membership Benefits</h2>
+        <section class="card">
+          <h4 class="color-black">Non Profit (NP)</h4>
+          <ul>
+            <li>Mentorship Program to grow professionally</li>
+            <li>Volunteer Opportunities</li>
+            <li>Learning Resources</li>
+          </ul>
+          
+        </section>
+        <section class="card">
+          <h4 class="color-black">Bronze Membership</h4>
+          <ul>
+            <li>Non-Industry Discounts</li>
+            <li>Virtual and In-Person Events</li>
+            <li>All benefits associated with NP membership</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h4 class="color-black">Silver Membership</h4>
+          <ul>
+            <li>Member Awards</li>
+            <li>All benefits associated with Bronze and NP memberships</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h4 class="color-black">Gold Membership</h4>
+          <ul>
+            <li>Voting Rights</li>
+            <li>All benefits associated with Silver, Bronze and NP memberships</li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer>
       <div id="upper">
