@@ -221,6 +221,7 @@ th, td {
 	border: 1px solid #aaaaaa;
   border-right: none;
   border-left: none;
+  width: 50%;
 }
 
 thead th{
@@ -235,6 +236,7 @@ thead tr:first-child th{
   background-color: inherit;
   font-size: 2rem;
 }
+
 
 tbody th {
   background-color: #333;
