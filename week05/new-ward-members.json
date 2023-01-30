@@ -1,0 +1,23 @@
+{
+  "family-name": "Oduski",
+  "moved-in": "July 5th, 2022",
+  "people": 3,
+  "visited-by-bishop": false,
+  "members": [
+    {
+      "name": "Luc Oduski",
+      "gender": "Female",
+      "birthdate": "1984"
+    },
+    {
+      "name": "Kack Oduski",
+      "gender": "Male",
+      "birthdate": "1980"
+    },
+    {
+      "name": "Lemo Oduski",
+      "gender": "Male",
+      "birthdate": "2014"
+    }
+  ]
+}
