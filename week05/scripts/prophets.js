@@ -8,9 +8,10 @@ async function getProphetData(){
   displayProphets(data.prophets);
 }
 
+// Portrait of Heber J. Grant - 7th Latter-day President
 
 const displayProphets = (prophets) => {
-  prophets.forEach((prophet) => {
+  prophets.forEach((prophet, idx) => {
     const card = document.createElement('section');
     const fullName = document.createElement('h2');
     const birthdate = document.createElement('p');
@@ -20,7 +21,7 @@ const displayProphets = (prophets) => {
     birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
     birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+    portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${idx+1}${idx > 1 ? 'th' : idx == 1 ? 'nd' : 'st' } Latter-day President`);
     portrait.setAttribute('loading', 'lazy');
     portrait.setAttribute('width', '340');
     portrait.setAttribute('height', '440');
