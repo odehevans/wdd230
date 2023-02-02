@@ -1,0 +1,7 @@
+{
+  "week01": ["week01/holygrail.html", "week01/media-query.html", "week01/chamber-site-plan.html"],
+  "week02": ["week02/design.html", "https://codepen.io/unidg/pen/rNryxYN", "week02/bom.html"],
+  "week03": ["week03/images/landscape.webp", "week03/lazyload.html", "https://codepen.io/unidg/pen/mdjqmQW?editors=1100", "week03/bom.html"],
+  "week04": ["https://codepen.io/unidg/pen/poZaBzB", "week04/images/css-combinators-exercise.png", "week04/tablebuild.html", "form-start/form-start/index.html"],
+  "week05": ["https://codepen.io/unidg/pen/xxJJzWR", "week05/new-ward-members.json", "week05/prophets.html", "week05/weather.html"]
+}
