@@ -22,14 +22,14 @@ const displayMembers = (members) => {
   members.forEach((member) => {
     const card = document.createElement('section');
     const companyName = document.createElement('h2');
-    const level = document.createElement('h4');
+    const level = document.createElement('h3');
     const contact = document.createElement('p');
     const address = document.createElement('p');
     const image = document.createElement('img');
     const details = document.createElement('div');
     companyName.textContent = member.name;
     level.textContent = member.level;
-    contact.innerHTML = `Tel: ${member.phone} <br> Website: ${member.website}`;
+    contact.innerHTML = `&#128222; ${member.phone} <br> <a href="${member.website}">${member.website}</a>`;
     address.textContent = `Office Address: ${member.address}`;
     image.setAttribute('src', member.imageUrl);
     image.setAttribute('alt', member.name);

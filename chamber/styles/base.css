@@ -302,9 +302,9 @@ form label.top input:required:valid {
   margin-bottom: 0;
 }
 
-#members h4 {
-  color:#9c2c13;
+#members h3 {
   text-align: center;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -348,13 +348,14 @@ form label.top input:required:valid {
 }
 
 #members.list img {
-  width: 170px;
-  height: 120px;
+  width: 120px;
+  height: 80px;
 }
 
-#toggle-view {
-  background-color: #fff;
+#members.list h2 {
+  font-size: 1.2rem;
 }
+
 
 .sub-header {
   display: flex;
@@ -363,7 +364,7 @@ form label.top input:required:valid {
 }
 
 .sub-header button {
-  border: none;
+  border: solid 2px #145A8C;
   margin: 5px;
   cursor: pointer;
 }
@@ -371,5 +372,5 @@ form label.top input:required:valid {
 
 .sub-header .active {
   background-color: #dfeef9;
-  border: solid 2px #333;
+  border: solid 2px #145A8C;
 }

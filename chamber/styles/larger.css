@@ -92,5 +92,15 @@
   .membership-benefits h2 {
     margin-bottom: 2rem;
   }
+
+  #members.list img {
+    width: 170px;
+    height: 120px;
+  }
+
+  #members.list h2 {
+    font-size: 1.5rem;
+  }
+  
  
 }
