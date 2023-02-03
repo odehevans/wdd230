@@ -1,0 +1,74 @@
+[
+  {
+    "name": "First Company Ltd",
+    "address": "Block 1, First Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://firstcompanyltd.com",
+    "imageUrl": "images/first-company.jpg",
+    "level": "Bronze Membership"
+  },
+  {
+    "name": "Second Company Ltd",
+    "address": "Block 1, Second Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://secondcompanyltd.com",
+    "imageUrl": "images/second-company.jpg",
+    "level": "Non Profit Membership"
+  },
+  {
+    "name": "Third Company Ltd",
+    "address": "Block 1, Third Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://thirdcompanyltd.com",
+    "imageUrl": "images/third-company.jpg",
+    "level": "Silver Membership"
+  },
+  {
+    "name": "Fourth Company Ltd",
+    "address": "Block 1, Fourth Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://fourthcompanyltd.com",
+    "imageUrl": "images/fourth-company.jpg",
+    "level": "Silver Membership"
+  },
+  {
+    "name": "Fifth Company Ltd",
+    "address": "Block 1, Fifth Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://fifthcompanyltd.com",
+    "imageUrl": "images/fifth-company.jpg",
+    "level": "Gold Membership"
+  },
+  {
+    "name": "Sixth Company Ltd",
+    "address": "Block 1, Sixth Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://sixthcompanyltd.com",
+    "imageUrl": "images/sixth-company.jpg",
+    "level": "Bronze Membership"
+  },
+  {
+    "name": "Seventh Company Ltd",
+    "address": "Block 1, Seventh Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://seventhcompanyltd.com",
+    "imageUrl": "images/seventh-company.jpg",
+    "level": "Gold Membership"
+  },
+  {
+    "name": "Eighth Company Ltd",
+    "address": "Block 1, Eighth Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://eighthcompanyltd.com",
+    "imageUrl": "images/eighth-company.jpg",
+    "level": "Bronze Membership"
+  },
+  {
+    "name": "Nineth Company Ltd",
+    "address": "Block 1, Nineth Company Street, Etete, Benin City",
+    "phone": "234 9062638712",
+    "website": "https://ninethcompanyltd.com",
+    "imageUrl": "images/nineth-company.jpg",
+    "level": "Non Profit Membership"
+  }
+]

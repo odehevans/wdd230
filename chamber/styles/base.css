@@ -290,3 +290,86 @@ form label.top input:required {
 form label.top input:required:valid {
   border-left: solid 6px green;
 }
+
+#members {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(360px, 1fr));
+  gap: 1rem;
+}
+
+#members h2 {
+  border: none;
+  margin-bottom: 0;
+}
+
+#members h4 {
+  color:#9c2c13;
+  text-align: center;
+  margin: 0;
+}
+
+#members p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+#members > section {
+  padding: 2rem;
+  background-color: #dfeef9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#members > section div{
+  padding: 1rem;
+}
+
+#members h2, #members p {
+  margin: 0.3rem auto;
+}
+
+#members img {
+  margin-top: 15px;
+  box-shadow: 0 0 15px #333
+}
+
+#members.list {
+  grid-template-columns: 1fr;
+}
+
+#members.list > section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 0.3rem;
+}
+
+#members.list img {
+  width: 170px;
+  height: 120px;
+}
+
+#toggle-view {
+  background-color: #fff;
+}
+
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-header button {
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+.sub-header .active {
+  background-color: #dfeef9;
+  border: solid 2px #333;
+}
